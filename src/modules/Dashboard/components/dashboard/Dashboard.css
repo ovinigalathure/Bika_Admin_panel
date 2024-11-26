@@ -1,0 +1,55 @@
+.dashboard {
+  width: 100%;
+  max-width: 1510px;
+  border-spacing: 20px; /* Space between table cells */
+}
+
+.dashboard__item {
+  background-color: #fae01f; /* Updated background color */
+  padding: 50px; /* Padding inside each item */
+  border-radius: 8px; /* Rounded corners */
+  font-weight: bold; /* Ensures bold font for item */
+  margin-left: -20px;
+  width: 150px;
+}
+
+.dashboard__link {
+  color: #000; /* Change this to your desired color */
+  text-decoration: none; /* Remove underline from links */
+  display: flex; /* Use flexbox for proper alignment */
+  justify-content: center; /* Center content */
+  align-items: center; /* Center vertically */
+  flex-direction: column; /* Stack icon and text vertically */
+  height: 100%; /* Ensure the link fills the table cell */
+  font-weight: bold; /* Make the text bold */
+}
+
+.dashboard__icon {
+  width: 40px; /* Set the width of the icon */
+  height: 40px; /* Set the height of the icon */
+  margin-bottom: 10px; /* Space between the icon and text */
+}
+
+.dashboard__item td {
+  padding: 10px 20px;
+  text-align: center;
+  border: none;
+  font-weight: bold; /* Bold text inside table cells */
+}
+
+.dashboard__item td:first-child {
+  text-align: left;
+  color: #000; /* Change this to your desired color */
+  font-weight: bold; /* Ensure text is bold */
+}
+
+.dashboard__item td:last-child {
+  text-align: right;
+  color: #000; /* Change this to your desired color */
+  font-weight: bold; /* Ensure text is bold */
+}
+.dashboard__count{
+  font-size: 20px;
+  font-weight: 600;
+  
+}

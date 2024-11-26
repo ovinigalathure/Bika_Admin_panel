@@ -1,0 +1,39 @@
+.dashboard-container {
+    padding: 20px;
+    flex: 1;
+    overflow-y: auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.today-button {
+    background-color: #FFD700;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.promotions-section, .special-offers-section {
+    margin: 20px 0;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.control-button {
+    background-color: #FFD700;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+.dashboard__main{
+    overflow-y: auto;
+}

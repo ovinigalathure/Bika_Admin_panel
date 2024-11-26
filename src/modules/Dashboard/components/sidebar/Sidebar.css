@@ -1,0 +1,51 @@
+.sidebar {
+  background-color: #f8860c;
+  padding: 20px;
+  width: 240px;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.sidebar__logo img {
+  width: 120px;
+  margin-bottom: 20px;
+}
+
+.sidebar__email {
+  margin-bottom: 20px;
+  color: #333;
+  font-weight: bold;
+}
+
+.sidebar__menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.sidebar__menu li {
+  margin: 10px 0; /* Adds space between each menu item */
+  font-weight: 600;
+}
+
+
+.sidebar__menu li a {
+  text-decoration: none;
+  color: black; /* Ensures the link text is black */
+  font-weight: 600; /* Makes the link text bold */
+  display: block; /* Ensures the link fills the li */
+  padding: 10px; /* Adds padding for better click area */
+  border-radius: 5px; /* Optional: Adds rounded corners */
+}
+
+.sidebar__menu li a:hover {
+  background-color: #ff9800; /* Change background on hover */
+  color: #fff; /* Change text color on hover */
+}
+.sidebar__menu li a.active-tab {
+  background-color: #ffae00; /* Highlight color for the active tab */
+  color: white; /* Text color for the active tab */
+}

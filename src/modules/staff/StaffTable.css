@@ -1,0 +1,162 @@
+/* Container styling */
+.staff-table-container {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Add Member Button */
+  .add-member-button {
+    display: block;
+    margin: 0 auto 20px;
+    background-color: #ffae00;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-member-button:hover {
+    background-color: #ee7f00;
+  }
+  
+  /* Table styling */
+  .staff-table {
+    margin-top: 20px;
+    width: 1000px;
+  }
+  
+  .staff-table th, .staff-table td {
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px;
+  }
+  
+  .staff-table thead th {
+    background-color: #ff8800;
+    color: #fff;
+  }
+  
+  .staff-table tbody tr:nth-of-type(odd) {
+    background-color: #f2f2f2;
+  }
+  
+  /* Modal Styling */
+/* Center modal */
+.modelAdd .modal-dialog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Full-screen height for proper centering */
+  }
+  
+  .modelAdd .modal-content {
+    margin: auto; /* Ensure vertical centering */
+  }
+  
+  .modal-header {
+    background-color: #ff8800;
+    color: white;
+    border-bottom: none;
+  }
+  
+  .modal-title {
+    font-weight: bold;
+  }
+  
+  .modal-body {
+    padding: 20px;
+    background-color: #fff5e6; /* Subtle background inside the modal */
+    border-radius: 8px;
+  }
+  
+  /* Form Group */
+  .modal-form-group {
+    margin-top: 10px;
+  }
+  
+  .modal-form-group label {
+    font-weight: bold;
+    color: #ff8800;
+  }
+  
+  .modal-form-group input, 
+  .modal-form-group select {
+    border: 1px solid #ffae00;
+    padding: 8px;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .modal-form-group input:focus, 
+  .modal-form-group select:focus {
+    border-color: #ee7f00;
+    outline: none;
+    box-shadow: 0 0 4px rgba(238, 127, 0, 0.5);
+  }
+  
+  /* Submit Button */
+  .modal-submit-button {
+    display: block;
+    width: 100%;
+    background-color: #ffa600 !important;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 20px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .modal-submit-button:hover {
+    background-color: #e68b03;
+    transform: translateY(-2px);
+  }
+  
+  /* Modal Close Button */
+  .modal-header .btn-close {
+    color: white;
+    opacity: 1;
+    background-color: red;
+  }
+  /* Custom modal header for alignment */
+.modal-header-custom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ff8800;
+    color: white;
+    border-bottom: none;
+    padding: 15px 20px;
+  }
+  
+  /* Close button styling */
+  .close-icon-button {
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    background-color: red !important;
+    cursor: pointer;
+  }
+  
+  .close-icon-button:hover {
+    color: #f1f1f1;
+    transform: scale(1.1);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  /* Modal Body Styling */
+  .modal-body {
+    padding: 20px;
+    background-color: #fff5e6;
+    border-radius: 8px;
+  }
+  

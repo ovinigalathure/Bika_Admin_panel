@@ -1,0 +1,16 @@
+.header {
+    padding: 10px 20px;
+    background-color: #ffa726;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header__profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  

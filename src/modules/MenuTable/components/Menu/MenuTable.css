@@ -1,0 +1,275 @@
+.menu-table {
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  margin: 20px;
+  max-width: 1100px;
+  overflow-x: auto !important;
+}
+
+.menu-table__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.menu-table__search {
+  display: flex;
+  align-items: center;
+}
+
+.menu-table__search input {
+  padding: 8px;
+  border: 1px solid #ffa726;
+  border-radius: 5px;
+}
+
+.search-button {
+  margin-left: 8px;
+  padding: 8px 16px;
+  background-color: #ffa726;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.menu-table__actions {
+  display: flex;
+  flex-direction: column; /* Arrange rows vertically */
+  gap: 10px; /* Adjust spacing between rows */
+}
+
+.menu-table__actions button {
+  background-color: #ffa726;
+  color: white; /* Optional: Set text color for contrast */
+  border: none; /* Optional: Remove default border */
+  padding: 10px 20px; /* Optional: Adjust padding */
+  border-radius: 5px; /* Optional: Add rounded corners */
+  cursor: pointer; /* Optional: Change cursor to pointer */
+}
+
+.menu-table__actions button:hover {
+  background-color: #ff8c00; /* Optional: Darken on hover */
+}
+
+.menu-table__row {
+  display: flex; /* Use flexbox for alignment */
+  justify-content: space-between; /* Space between menu type text and buttons */
+  align-items: center; /* Center items vertically */
+  padding: 10px 0; /* Padding for the row */
+}
+
+/* Additional class for button container */
+.button-container {
+  display: flex; /* Use flexbox to align buttons */
+  gap: 10px; /* Space between buttons */
+  margin-left: auto; /* Push buttons to the right */
+}
+
+.menu-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.menu-table th, .menu-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+.menu-table th {
+  background-color: #f57c00;
+  color: white;
+}
+
+/* New CSS for Menu Types section */
+.menu-type-section {
+  margin-bottom: 20px; /* Space below the Menu Types section */
+  padding: 15px; /* Padding inside the section */
+  border: 1px solid #ddd; /* Border around the section */
+  border-radius: 5px; /* Rounded corners */
+  background-color: #f9f9f9; /* Light background color */
+}
+
+.menu-type-section h2 {
+  margin-bottom: 10px; /* Space below the heading */
+  color: #333; /* Dark text color for contrast */
+}
+
+.menu-type-section button {
+  background-color: #ffa726; /* Button color */
+  color: white; /* Button text color */
+  border: none; /* Remove default border */
+  padding: 8px 12px; /* Padding for the button */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+.menu-type-section button:hover {
+  background-color: #ff8c00; /* Darken on hover */
+}
+
+.menu-type-list {
+  margin-top: 15px; /* Space above the menu type list */
+}
+
+.menu-type {
+  background-color: #e0e0e0; /* Background for each menu type */
+  padding: 8px; /* Padding inside each type */
+  border-radius: 4px; /* Rounded corners for individual types */
+  margin-bottom: 5px; /* Space between types */
+}
+
+/* Image size settings */
+.menu-image {
+  width: 50px; /* Set the width for images */
+  height: 50px; /* Set the height for images */
+  object-fit: cover; /* Ensures the image covers the area without distortion */
+}
+
+/* Popup Styles */
+.popup {
+  position: fixed; /* Fixed position */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  background-color: white; /* White background for the popup */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+  width: 400px; /* Set width for popup */
+}
+
+.popup-content h3 {
+  margin-bottom: 15px; /* Space below the heading */
+}
+
+.popup-content input {
+  width: 100%; /* Full width for input */
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px; /* Space below the input */
+}
+
+.popup-content .button-container {
+  display: flex;
+  justify-content: flex-end; /* Align buttons to the right */
+  gap: 10px; /* Adjust spacing between buttons */
+}
+
+.popup-content .button-container button {
+  background-color: #ffa726; /* Button color */
+  color: white; /* Button text color */
+  border: none; /* Remove default border */
+  padding: 8px 12px; /* Padding for the button */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+.popup-content .button-container button:hover {
+  background-color: #ff8c00; /* Darken on hover */
+}
+
+/* Existing CSS remains unchanged */
+.popup-buttons {
+  display: flex;
+  justify-content: space-between; /* Align buttons with space in between */
+  margin-top: 10px; /* Optional: Add space above the button container */
+}
+
+.add-button, .cancel-button {
+  background-color: #ffa726; /* Button color */
+  color: white; /* Button text color */
+  border: none; /* Remove default border */
+  padding: 8px 12px; /* Padding for the button */
+  border-radius: 5px; /* Rounded corners */
+  flex: 1; /* Allow buttons to take equal space */
+  margin-right: 10px; /* Space between buttons */
+}
+
+.cancel-button {
+  background-color: #ff5252; /* Different color for cancel button */
+}
+
+.cancel-button:hover {
+  background-color: #ff1744; /* Darken cancel button on hover */
+}
+
+/* Prevent margin on the last button */
+.popup-buttons .cancel-button {
+  margin-right: 0; /* Remove margin on the last button */
+}
+
+/* Add hover effect for add button */
+.add-button:hover {
+  background-color: #ff8c00; /* Darken on hover */
+}
+
+.delete-button {
+  background-color: #ff5252; /* Red color for delete button */
+  color: white; /* White text color */
+  border: none; /* Remove default border */
+  padding: 4px 8px; /* Padding for the button */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  margin-left: 0px;
+}
+
+.delete-button:hover {
+  background-color: #ff1744; /* Darken delete button on hover */
+}
+
+.edit-button {
+  background-color: transparent; /* Transparent background */
+  border: none; /* No border */
+  cursor: pointer; /* Change cursor to pointer */
+  color: #007bff; /* Color for the icon */
+  font-size: 16px; /* Size of the icon */
+  transition: color 0.3s; /* Transition for color change */
+  margin-left: 800px;
+}
+
+/* Change color on hover */
+.edit-button:hover {
+  color: #0056b3; /* Darker shade on hover */
+}
+
+
+.modal {
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.close-button {
+  cursor: pointer;
+  float: right;
+  font-size: 20px;
+}
+
+

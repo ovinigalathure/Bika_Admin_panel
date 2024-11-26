@@ -1,0 +1,132 @@
+/* Notification Filters */
+.notification-filters {
+  display: flex;
+  gap: 10px;
+  padding: 20px 0;
+}
+
+.filter-button {
+  background-color: #7c7676; /* Light beige color */
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.filter-button:hover {
+  background-color: #5a5252;
+}
+
+/* Subscriber List */
+.subscriber-list {
+  margin: 20px 0;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.subscriber-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.reply-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #7c7676;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.reply-button:hover {
+  background-color: #5a5252;
+}
+
+.subscriber-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.subscriber-list li {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+  color: black;
+}
+
+.subscriber-list li:last-child {
+  border-bottom: none;
+}
+
+/* Modal */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 500px;
+  text-align: center;
+}
+
+.message-input {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.send,
+.cancel {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #7c7676;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.send:hover {
+  background-color: #5a5252;
+}
+
+.cancel {
+  background-color: #d9534f;
+}
+
+.cancel:hover {
+  background-color: #c9302c;
+}

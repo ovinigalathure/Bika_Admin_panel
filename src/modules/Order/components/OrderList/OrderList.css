@@ -1,0 +1,256 @@
+/* General Order List Styling */
+.order-list {
+  position: relative; /* Ensures z-index works as expected */
+  width: 90%;
+  margin: 50px auto;
+  text-align: center;
+  padding: 20px;
+  background-color: #fafafa;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.order-list__title {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.order-list__add-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.order-list__add-button:hover {
+  background-color: #0056b3;
+}
+
+.order-list__add-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Table Container with Scroll */
+.order-list__table-container {
+  max-height: 500px;
+  overflow-y: auto;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  margin-top: 20px;
+}
+
+/* Table Styling */
+.order-list__table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.order-list__table th,
+.order-list__table td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  font-size: 1rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.order-list__table th {
+  position: sticky;
+  top: 0;
+  background-color: #f4f4f4;
+  color: #333;
+  font-weight: 600;
+  z-index: 2; /* Lower z-index to prevent overlap with modal */
+}
+
+.order-list__table td {
+  color: #555;
+}
+
+.order-list__table tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Set specific column widths */
+.order-list__table th:first-child,
+.order-list__table td:first-child {
+  text-align: center;
+  width: 5%; /* Checkbox column */
+}
+
+.order-list__table th:nth-child(2),
+.order-list__table td:nth-child(2) {
+  width: 10%; /* Order ID column */
+}
+
+.order-list__table th:nth-child(3),
+.order-list__table td:nth-child(3) {
+  width: 20%; /* User Email column */
+}
+
+.order-list__table th:nth-child(4),
+.order-list__table td:nth-child(4) {
+  width: 15%; /* Product Name(s) column */
+}
+
+.order-list__table th:nth-child(5),
+.order-list__table td:nth-child(5) {
+  width: 8%; /* Quantity column */
+}
+
+.order-list__table th:nth-child(6),
+.order-list__table td:nth-child(6) {
+  width: 8%; /* Price column */
+}
+
+.order-list__table th:nth-child(7),
+.order-list__table td:nth-child(7) {
+  width: 10%; /* Total Price column */
+}
+
+.order-list__table th:nth-child(8),
+.order-list__table td:nth-child(8) {
+  width: 10%; /* Delivery Option column */
+}
+
+.order-list__table th:nth-child(9),
+.order-list__table td:nth-child(9) {
+  width: 10%; /* Timestamp column */
+}
+
+.order-list__table th:nth-child(10),
+.order-list__table td:nth-child(10) {
+  width: 10%; /* Details column */
+  text-align: center;
+}
+
+/* Button Styling */
+.order-list__details-button {
+  padding: 8px 12px;
+  font-size: 0.9rem;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.order-list__details-button:hover {
+  background-color: #0056b3;
+}
+
+/* Modal and overlay for details view */
+.order-details-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Dark overlay */
+  z-index: 9999; /* High z-index to ensure it appears above other content */
+}
+
+.order-details-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  width: 90%;
+  max-width: 600px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 10000; /* Even higher z-index to ensure it appears above overlay */
+}
+
+.order-details-modal__close-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+.order-details-modal__close-button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .order-list__table th,
+  .order-list__table td {
+    padding: 12px;
+    font-size: 0.9rem;
+  }
+
+  .order-list__title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .order-list {
+    width: 95%;
+  }
+
+  .order-list__table th,
+  .order-list__table td {
+    padding: 10px;
+    font-size: 0.85rem;
+  }
+
+  .order-list__title {
+    font-size: 1.8rem;
+  }
+
+  /* Adjust button padding and font size on smaller screens */
+  .order-list__details-button {
+    padding: 6px 10px;
+    font-size: 0.8rem;
+  }
+
+  .order-list__add-button {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .order-list__table th,
+  .order-list__table td {
+    padding: 8px;
+    font-size: 0.8rem;
+  }
+
+  .order-list__title {
+    font-size: 1.6rem;
+  }
+
+  /* Adjust button styles further for smaller screens */
+  .order-list__details-button {
+    padding: 4px 8px;
+    font-size: 0.75rem;
+  }
+
+  .order-list__add-button {
+    padding: 6px 12px;
+    font-size: 0.8rem;
+  }
+}

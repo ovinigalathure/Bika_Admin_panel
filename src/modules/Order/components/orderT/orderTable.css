@@ -1,0 +1,64 @@
+.order-status-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 20px;
+    max-width: 1200px;
+    margin-top: 100px;
+    padding: 0 20px;
+}
+
+.order-status-card {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 150px;
+}
+
+.order-status-card:hover {
+    transform: translateY(-5px);
+}
+
+.order-status-card h3 {
+    font-size: 24px;
+    color: #343a40;
+    margin-bottom: 10px;
+}
+
+.order-status-btn {
+    background-color: #df730e;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%; /* Button takes full width of card */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.order-status-btn:hover {
+    background-color: #f18406;
+}
+
+/* Specific background colors for each card */
+.order-status-new {
+    background-color: #e0f7fa;
+}
+
+.order-status-pending {
+    background-color: #fff3e0;
+}
+
+.order-status-confirmed {
+    background-color: #e8f5e9;
+}
+
+.order-status-ready {
+    background-color: #f3e5f5;
+}

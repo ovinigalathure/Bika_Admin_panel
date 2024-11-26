@@ -1,0 +1,27 @@
+html , body{
+    overflow: hidden;
+  }
+  .dashboard {
+      display: flex;
+      background-color: white;
+      overflow-x: hidden;
+      overflow-y: hidden;
+      padding: 0%;
+      border:20px solid #fac504;
+      width: 1490px;
+      height: 95vh;
+    }
+    
+    .dashboard__main {
+      flex-grow: 1;
+      background-color: #fff9c4;
+    }
+    .dashboard-container {
+    display: flex;
+    height: 100vh;
+}
+
+.dashboard-content {
+    flex: 1;
+    padding: 20px;
+}

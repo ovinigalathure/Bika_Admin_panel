@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: url('../../assets/yell.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+    overflow-x: hidden;
+}
+
+.add-product-form {
+    width: 700px;
+    height: 600px;
+    margin: 80px auto;
+    padding: 25px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 90px;
+    margin-left: 380px;
+    overflow-y: auto;
+}
+
+.add-form-group {
+    margin-bottom: 20px;
+}
+
+.add-form-group label {
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #3b0f0f;
+}
+
+.add-form-group input,
+.add-form-group select,
+.add-form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.add-form-group select {
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.add-form-group input[type="file"] {
+    padding: 5px;
+    background-color: #fff;
+    color: #000;
+}
+
+.add-submit-button {
+    width: 30%;
+    padding: 12px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-left: 240px;
+    margin-top: 20px;
+}
+
+.add-submit-button:disabled {
+    background-color: #999;
+    cursor: not-allowed;
+}
+
+.add-submit-button:hover:not(:disabled) {
+    background-color: #218838;
+}
+
+.add-form-group textarea {
+    resize: none;
+}
+
+.add-form-group input:focus,
+.add-form-group textarea:focus,
+.add-form-group select:focus {
+    outline: none;
+    border-color: #00796b;
+    box-shadow: 0 0 3px rgba(0, 121, 107, 0.5);
+}

@@ -1,0 +1,109 @@
+/* Modal Overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Modal Content */
+.modal-content {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  width: 90%;
+  max-width: 600px;
+  max-height: 80vh; /* Limit the height of the modal */
+  overflow: hidden; /* Prevent content from overflowing */
+  position: relative;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Close Button */
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #333;
+}
+
+.close-button:hover {
+  color: #d9534f;
+}
+
+/* Modal Sections */
+.modal-section {
+  margin-bottom: 20px;
+}
+
+.modal-section h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #333;
+}
+
+.modal-section p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Scrollable Content */
+.order-item {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.customization-section ul {
+  padding-left: 20px;
+  margin: 10px 0;
+}
+
+.customization-section li {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Make modal content scrollable */
+.modal-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-content > .modal-section {
+  flex-grow: 1;
+  overflow-y: auto; /* Add vertical scroll to content */
+  padding-right: 10px; /* Add space for the scrollbar */
+}
+
+/* Scrollbar styling */
+.modal-content > .modal-section::-webkit-scrollbar {
+  width: 6px;
+}
+
+.modal-content > .modal-section::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
+}
+
+.modal-content > .modal-section::-webkit-scrollbar-thumb:hover {
+  background: #aaa;
+}
+
+.modal-content > .modal-section::-webkit-scrollbar-track {
+  background: #f0f0f0;
+}

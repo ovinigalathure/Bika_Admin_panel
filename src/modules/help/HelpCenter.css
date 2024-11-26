@@ -1,0 +1,44 @@
+/* profile/helpCenter.css */
+.help-center-container {
+    background-color: #ffdd00;
+    padding: 20px;
+    width: 1540px;
+    height: 100vh;
+  }
+  
+  .help-header {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .help-table {
+    width: 1200px; /* Adjust this value as needed */
+    margin-top: 20px;
+    margin-left: 20px;
+    border-collapse: collapse;
+  }
+  
+  
+  .help-table th, .help-table td {
+    border: 1px solid #d8d8d8;
+    padding: 10px;
+    text-align: left;
+    color: rgb(0, 0, 0);
+    width: 800px;
+  }
+  
+  .help-table th {
+    background-color: #ff7b00;
+  }
+  
+  .help-table tr:nth-child(even) {
+    background-color: #ffffff;
+    color: black;
+  }
+  
+  .help-table tr:nth-child(odd) {
+    background-color: #ffffff;
+    color: black;
+  }
+  

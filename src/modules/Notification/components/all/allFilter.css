@@ -1,0 +1,20 @@
+.comment-list {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0;
+    margin-top: 50px;
+    margin-left: -100px;
+  }
+  
+  .comment-list li {
+    border-bottom: 1px solid #ccc; /* Add a separator */
+    padding: 10px 0; /* Add padding */
+  }
+  
+  .error-message {
+    color: red; /* Error text color */
+  }
+  
+  .notification-filters {
+    padding: 20px; /* Add padding to the container */
+  }
+  
